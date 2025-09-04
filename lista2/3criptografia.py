@@ -4,7 +4,7 @@ class criptografia:
 
     def criptografar(self):
         texto_criptografado = []
-        for i in range(len(self.texto.upper())):
+        for i in range(len(self.texto)):
             if self.texto.upper()[i] == "A":
                 texto_criptografado.append("4")
             elif self.texto.upper()[i] == "E":
@@ -16,7 +16,7 @@ class criptografia:
             elif self.texto.upper()[i] == "U":
                 texto_criptografado.append("8")
             else:
-                texto_criptografado.append(self.texto.upper()[i])
+                texto_criptografado.append(self.texto[i])
         return "".join(texto_criptografado)
 
 def main():
